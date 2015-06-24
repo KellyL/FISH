@@ -20,7 +20,7 @@
             $endDate . "</strong></p>";
       echo "<p>Lodge Name: Golden Star  Lodge No. 484</p>";
 
-      @ $db = new mysqli($host, $user, $password, $database);;
+      @ $db = new mysqli($host, $user, $password, $database);
 
       if(mysqli_connect_errno())
       {

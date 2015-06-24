@@ -4,6 +4,7 @@
   </head>
   <body>
 <?php
+  require_once('config.php');
 
   /* Process Form Variables */
   $firstName = $_POST['firstName'];
@@ -34,27 +35,7 @@
   	echo "Required: First Name, Last Name, Initiated Date<br />";
   }
   
-  /*DEBUG
-  echo "Data Received:<br />";
-  echo $firstName . "<br />";
-  echo $lastName . "<br />";
-  echo $spouse . "<br />";
-  echo $city . "<br />";
-  echo $address . "<br />";
-  echo $postalCode . "<br />";
-  echo $phone . "<br />";
-  echo $email . "<br />";
-  echo $contactPref . "<br />";
-  echo $bylawsReceived . "<br />";
-  echo $paymentType . "<br />";
-  echo $rollNumber . "<br />";
-  echo $glCertNumber . "<br />";
-  echo $initiatedDate . "<br />";
-  echo $passedDate . "<br />";
-  echo $raisedDate . "<br />";
-  echo $affiliatedDate . "<br />";
-  echo $maxOfficerPos . "<br />";
-  */
+
 
   /* clean up input */
   if(!get_magic_quotes_gpc())
@@ -81,7 +62,7 @@
   	$maxOfficerPos = addslashes($maxOfficerPos);
   }
   
-  @ $db = new mysqli('localhost', 'kl365', 'x3!17a', 'fish');
+  @ $db = new mysqli($host, $user, $password, $databases);
 
   if(mysqli_connect_errno())
   {

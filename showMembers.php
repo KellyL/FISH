@@ -13,8 +13,10 @@
       </tr>
       <?php
 
+        $require_once('config.php');
 
-        $db = new mysqli('localhost', 'kl365', 'x3!17a', 'fish');
+
+        $db = new mysqli($host, $user, $password, $database);
 
         if(mysqli_connect_errno())
         {
