@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>F.I.S.H - Add New Member</title>
+  </head>
+  <body>
+    <form action="addMember.php" method="post">
+      <table>
+        <tr>
+          <td>First Name: </td>
+          <td><input type="text" name="firstName" maxlength="60" size="30" /></td>          
+        </tr>
+        <tr>
+          <td>Last Name: </td>
+          <td><input type="text" name="lastName" maxlength="60" size="30" /></td>          
+        </tr>
+        <tr>
+          <td>Spouse: </td>
+          <td><input type="text" name="spouseName" maxlength="60" size="30" /></td>          
+        </tr>
+        <tr>
+          <td>Birthday: </td>
+          <td><input type="date" name="birthday"/></td>          
+        </tr>
+        <tr>
+          <td>City: </td>
+          <td><input type="text" name="city" maxlength="60" size="30" /></td>          
+        </tr>
+        <tr>
+          <td>Address: </td>
+          <td><input type="text" name="address" maxlength="60" size="30" /></td>          
+        </tr>
+        <tr>
+          <td>Postal Code: </td>
+          <td><input type="text" name="postalCode" maxlength="10" size="15" /></td>          
+        </tr>
+        <tr>
+          <td>Phone Number: </td>
+          <td><input type="text" name="phone" maxlength="15" size="15" /></td>          
+        </tr>
+        <tr>
+          <td>Email: </td>
+          <td><input type="text" name="email" maxlength="60" size="30" /></td>          
+        </tr>
+        <tr>
+          <td>Contact Preference: </td>
+          <td><select name="contactPreference">
+			      <option value="phone">Phone</option>
+			      <option value="email">Email</option>
+			      <option value="facebook">Facebook</option>
+			      <option value="canadaPost">Canada Post</option>
+               </select>
+           </td>          
+        </tr>
+        <tr>
+          <td>Occupation: </td>
+          <td><input type="text" name="occupation" maxlength="60" size="30" /></td>          
+        </tr>
+        <tr>
+          <td>Bylaws Received: </td>
+          <td><input type="checkbox" name="bylawsReceived" value="yes" /></td>        
+        </tr>
+        <tr>
+          <td>Payment Type: </td>
+          <td>
+          	<select name="paymentType">
+          	  <option value="life">Life</option>
+          	  <option value="dues">Dues</option>
+          	  <option value="autoEnrolled">Auto</option>
+          	</select>
+          </td>          
+        </tr>
+        <tr>
+          <td>Roll #: </td>
+          <td><input type="text" name="rollNumber" maxlength="15" size="15" /></td>          
+        </tr>
+        <tr>
+          <td>Grand Lodge Certification #: </td>
+          <td><input type="text" name="glCertNumber" maxlength="15" size="15" /></td>          
+        </tr>
+        <tr>
+          <td>Initiated Date: </td>
+          <td><input type="date" name="initiatedDate" /></td>          
+        </tr>
+        <tr>
+          <td>Passed Date: </td>
+          <td><input type="date" name="passedDate" /></td>          
+        </tr>
+        <tr>
+          <td>Raised Date: </td>
+          <td><input type="date" name="raisedDate" /></td>          
+        </tr>  
+        <tr>
+          <td>Affiliated Date: </td>
+          <td><input type="date" name="affiliatedDate" /></td>          
+        </tr>
+        <tr>
+          <td>Highest Officer Position: </td>
+          <td>
+            <select name="maxOfficerPos">
+              <option value="none">None</option>
+              <option value="innerGuard">Inner Guard</option>
+              <option value="outerGuard">Outer Guard</option>
+              <option value="juniorDeacon">Junior Deacon</option>
+              <option value="seniorDeacon">Senior Deacon
+              <option value="juniorWarden">Junior Warden</option>
+              <option value="seniorWarden">Senior Warden</option>
+              <option value="worshipfulMaster">Worshipful Master</option>
+            </select>
+          </td>          
+        </tr>        
+        <tr>
+          <td colspan="2"><input type="submit" name="submit" value="Enter"/></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+Database: Fish
+
+Table: <Members>
+
+Table: <Affiliation>
+affiliateID            INT
+*memberID              INT(members)
+affiliationDate        Date
+homeLodge              TEXT
+
+
+
+  /*DEBUG
+  echo "Data Received:<br />";
+  echo $firstName . "<br />";
+  echo $lastName . "<br />";
+  echo $spouse . "<br />";
+  echo $city . "<br />";
+  echo $address . "<br />";
+  echo $postalCode . "<br />";
+  echo $phone . "<br />";
+  echo $email . "<br />";
+  echo $contactPref . "<br />";
+  echo $bylawsReceived . "<br />";
+  echo $paymentType . "<br />";
+  echo $rollNumber . "<br />";
+  echo $glCertNumber . "<br />";
+  echo $initiatedDate . "<br />";
+  echo $passedDate . "<br />";
+  echo $raisedDate . "<br />";
+  echo $affiliatedDate . "<br />";
+  echo $maxOfficerPos . "<br />";
+  */
